@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en" class="">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="UTF-8" /><meta name="HandheldFriendly" content="True" /><meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" /><title>
+	PortFolio | Personal Portfolio
+</title><link rel="shortcut icon" href="https://images.app.goo.gl/DCEd1ER7CNMkByCX6" /><link id="lkCanonical" rel="canonical" href="index.html" />
+<meta id="metaServer" name="Server" content="CTI-XPWSCC021" /><meta id="ogTitle" property="og:title" content=" Dr. Pretom Roy Ovi - Department of Data Science, University of North Texas" /><meta id="ogType" property="og:type" content="article" />
+<meta id="ogSiteName" property="og:site_name" content="Department of Data Science, University of North Texas" />
+<meta id="ogURL" property="og:url" content="index.html" /><meta id="ogImage" property="og:image" content="./assets/media/images/logo2.jpeg" /><script src='./assets/media/images/logo2.jpeg'>SCBeacon.trackEvent('Page visited')</script>
+<script type="text/javascript" src="./assets/sc_scripts/V2/libs/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="./assets/sc_scripts/V2/libs/modernizr-2.5.3.min.js"></script>
+<script type="text/javascript" src="./assets/sc_scripts/V3/drexelLib.js"></script>
+<script type="text/javascript">
+    var _sr='/';
+    var _ir='https://drexel.edu/~/media/Images/cci/';
+</script>
+<style>
+:root {
+  --unt-green: #00853E;
+  --unt-gold: #FFC72C;
+  --unt-dark: #333333;
+  --unt-light: #f8f9fa;
+  --unt-gray: #6c757d;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Base Styles */
+.page-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: var(--unt-dark);
+}
+
+/* Hero Section */
+.split-image.green {
+  background: linear-gradient(135deg, var(--unt-green) 0%, #006a32 100%);
+}
+
+.split-image-overflow-wrapper {
+  display: flex;
+  min-height: 500px;
+}
+
+.split-image-image {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.split-image-image img {
+  width: 100%;
+  height: 80%;
+  align-items: center;
+  image-rendering: auto;
+  padding-top: 20%;
+  transition: transform 0.5s ease;
+}
+
+.split-image-image:hover img {
+  transform: scale(1.03);
+}
+
+.split-image-content {
+  width: 50%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.split-image-content .heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.split-image-content .subheading {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+.split-image-content .split-copy {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+  line-height: 1.7;
+}
+
+/* Button Styles */
+.button-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.btn-unt {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+}
+
+.btn-unt.small {
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.btn-unt.large {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+.btn-unt {
+  background-color: var(--unt-gold);
+  color: var(--unt-dark);
+}
+
+.btn-unt:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  background-color: #ffd24d;
+}
+
+.btn-unt svg {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.btn-unt:hover svg {
+  transform: translateX(4px);
+}
+
+/* Program Cards */
+.flippers-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.flipper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  height: 300px;
+}
+
+.flipper:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.flipper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.flipper:hover img {
+  transform: scale(1.1);
+}
+
+.flipper-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+  padding: 2rem 1.5rem 1.5rem;
+}
+
+.card-front .heading {
+  font-size: 1.4rem;
+  margin: 0;
+  transition: var(--transition);
+}
+
+.card-slide {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(135deg, var(--unt-green) 0%, #006a32 100%);
+  padding: 2rem 1.5rem;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flipper:hover .card-slide {
+  top: 0;
+}
+
+.card-slide .heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hr-yellow {
+  border: 0;
+  height: 3px;
+  width: 50px;
+  background-color: var(--unt-gold);
+  margin: 1rem 0;
+  border-radius: 3px;
+}
+
+/* CTA Strip */
+.cta-strip {
+  background-color: var(--unt-light);
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+
+.cta-strip-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.cta-strip-cta {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--unt-dark);
+}
+
+/* Content Section */
+.section-header {
+  text-align: center;
+  padding: 4rem 0 2rem;
+}
+
+.section-header-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--unt-green);
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header-heading h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--unt-gold);
+  border-radius: 2px;
+}
+
+.standard-wizzy {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.wizzy-wrapper h3 {
+  font-size: 1.6rem;
+  color: var(--unt-green);
+  margin: 2.5rem 0 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.wizzy-wrapper h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  height: 1.8rem;
+  width: 5px;
+  background-color: var(--unt-gold);
+  border-radius: 3px;
+}
+
+.wizzy-wrapper h3 a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.wizzy-wrapper h3 a:hover {
+  color: var(--unt-dark);
+}
+
+.wizzy-wrapper p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--unt-gray);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .split-image-overflow-wrapper {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .split-image-image, 
+  .split-image-content {
+    width: 100%;
+  }
+  
+  .split-image-content {
+    padding: 3rem 2rem;
+  }
+  
+  .flippers-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .button-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .cta-strip-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .section-header-heading h2 {
+    font-size: 2rem;
+  }
+  
+  .wizzy-wrapper h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .flippers-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .split-image-content .heading {
+    font-size: 2rem;
+  }
+  
+  .standard-wizzy {
+    padding: 0 1.5rem 3rem;
+  }
+}
+</style>
+<script type="text/javascript" src="./assets/sc_scripts/jquery-ui-1.8.23/js/jquery-ui.js"></script>
+<script type="text/javascript" src="./assets/sc_scripts/V3/pagenotfound.js"></script>
+<link rel="stylesheet" href="./assets/sc_scripts/jquery-ui-1.8.23/css/smoothness/jquery-ui-1.8.23.custom.css" type="text/css" />
+<link rel="stylesheet" href="https://drexel.edu/~/stylesheets/baseVelir/PageNotFound" type="text/css" />
+
+<link id="headtag_1_linkCssGlobal" rel="stylesheet" href="https://drexel.edu/~/stylesheets/cci/globalcss/?hash=0a5762c818a7bd1ec21fbbae5b1355d8" type="text/css"></link>
+<link id="headtag_1_linkCssSite" rel="stylesheet" href="https://drexel.edu/~/stylesheets/cci/componentcss/?hash=22fd94a6619f2562a7d5bbb07d351cc5" type="text/css"></link>
+
+<meta name="article:published_time" content="2024-09-24T10:26:05" /></head>
+<body id="htmlBody" class="cci CCIBioPage" style="background-color: #E0EDF3;">
+	
+    <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-TJCKC2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){
+    w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;j.src='./assets/../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j, f);
+    })(window,document,'script','dataLayer','GTM-TJCKC2');</script>
+
+	
+<header class="global-header global-header--light" aria-label="Site header" role="banner" style="background-color: #171615;">
+    <div class="container container--100 is-adjacent">
+        <div class="container__col">
+            <div class="container__inner">
+                <div class="global-header__top">
+
+                    <div class="global-header__top-left">
+                        <div id="bodytag_0_divLockUp" class="site-logo">
+	
+                                <a id="bodytag_0_hlLockup" class="site-logo__link" href="index.html">
+                                    <img id="bodytag_0_imgLockup" src="./assets/media/images/logo.png" /></a>
+                                
+                        
+</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- site menu -->
+    <div class="container container--bleed is-adjacent">
+        <div class="container__col">
+            <div class="container__inner">
+                <div class="global-header__bottom">
+                    <!-- primary nav -->
+                    <Button id="nav-toggle-btn" class="primary-nav__toggle js-nav-toggle">
+                        <span class="primary-nav__toggle-icon"><span></span></span>
+                        <span class="primary-nav__label-open">Menu</span>
+                        <span class="primary-nav__label-close">Close</span>
+                    </Button>
+                    <nav class="primary-nav js-primary-nav" aria-label="primary navigation" role="navigation" aria-expanded="true">
+                        <div class="primary-nav__menu-wrap js-menu">
+                            <div class="primary-nav__menu-wrap__inner">
+                                <ul class="primary-nav__menu" role="group">
+                                    <li class="primary-nav__item js-nav-item"><a href="index.html">Home</a></li>
+                                    <li class="primary-nav__item js-nav-item"><a href="about.html">About</a></li>
+                                    <li class="primary-nav__item js-nav-item"><a href="publication.html">Publication</a></li>
+                                    <li class="primary-nav__item js-nav-item"><a href="researchlab.html">Research</a></li>
+                                    <li class="primary-nav__item js-nav-item"><a href="course.html">Course</a></li>
+                                    </ul>                                  
+<div class="utility-nav">
+</div>
+
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- end nav -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end menu -->
+
+</header><div id="bodytag_1_divSnippet" class="">
+    <script>
+        $(document).ready(function() {
+        
+            console.log("idk");
+        
+            $( ".CCIBioPage .container--20-80 .container__col:first-child" ).clone().prependTo( ".container--20-80 .container__col:last-child" );
+        
+            $( ".container--20-80.has-divider > .container__col:first-child" ).prepend( $( "<a href='publication.html' class='btn btn--primary' style='background-color:rgb(7, 83, 26); color: white;'>Back Home</a>" ) );
+        
+            $(".CCIBioPage .container--20-80 > .container__col:nth-of-type(2) > .container__col .bio-info__position .pronouns").appendTo(".bio-info.is-for-mobile");
+        
+        });
+        </script>        
+
+</div>
+
+<div class="container container--bleed has-border container--breadcrumb-share" style="background: url('./assets/media/images/bg.jpg') center/cover; height: 55px;">
+    <div class="container container--70-30 is-adjacent">
+        <div class="container__col">
+            <div class="container__inner">
+                <nav class="breadcrumbs" aria-label="You are here:" role="navigation">
+                    <ul class="breadcrumbs__list" style="list-style: none; padding: 0; margin: 0; display: flex; align-items: center;">
+                        <li class="breadcrumbs__item" style="color: white; margin-right: 10px;">
+                            Dr. Pretom Roy Ovi
+                            <img src="./assets/media/images/arrow.png"/>
+                        </li>
+                        <li class="breadcrumbs__item" style="color: white;">Research</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<body>
+      <div class="page-wrapper">
+         <div id="main" role="main" class="full-width">
+            <div>
+               <div class="split-image green">
+                  <div class="split-image-overflow image-left overflow-spacing">
+                     <div class="split-image-overflow-wrapper ">
+                        <div class="split-image-image">
+                           <img src="./assets/media/images/imagelab.jpg" alt="Students gathering outside department office.">
+                        </div>
+                        <div class="split-image-content text-left">
+                           <h3 class="heading">The Anuradha and Vikas Sinha</h3>
+                           <div class="subheading">DEPARTMENT OF DATA SCIENCE</div>
+                           <div class="split-copy"><em>To deliver world-class data science education, advance research excellence, and shape
+                                 the next generation of leaders.<br></em></div>
+                           <div class="split-cta">
+                              <div class="button-row">
+                                 <div>
+                                    <a href="https://www.unt.edu/admissions/requestinfo" class="btn-unt small">Request More Info</a>
+                                 </div>
+                                 <div>
+                                    <a href="https://admissions.unt.edu/" class="btn-unt small">Apply Now</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="flippers">
+                  	
+                  <div class="flippers-wrapper grid-columns-4 py-6 sm:py-8 md:py-10 lg:py-12 xl:py-16">
+                     		
+                     <div class="flipper">
+                        <img src="./assets/media/images/BachelorsDegree.jpg" alt="Dr. Junhua Ding speaking to three data science students in classroom.">
+                        <a href="/programs/bsds/index.html" class="flipper-card">
+                           <!-- 	<div class="flipper-card"> -->
+                           
+                           <div class="card-front">
+                              
+                              <div class="heading">Bachelor's Degree Program</div>
+                              </div>
+                           
+                           <div class="card-slide">
+                              
+                              <div class="card-slide-wrapper">
+                                 
+                                 <div class="heading">Bachelor's Degree Program</div>
+                                 
+                                 <div>
+                                    
+                                    <hr class="hr-yellow">
+                                    <!-- 			<a href="/programs/bsds/index.html" class="text-white-override"> -->
+                                    Learn more
+                                    <!-- 			</a> -->
+                                    </div>
+                                 </div>
+                              </div>
+                           <!-- </div> -->
+                           </a>
+                        </div>
+                     <div class="flipper">
+                        <img src="./assets/media/images/GradTrack.jpg" alt="Students walking outside near library mall.">
+                        <a href="/programs/grad-track/index.html" class="flipper-card">
+                           <!-- 	<div class="flipper-card"> -->
+                           
+                           <div class="card-front">
+                              
+                              <div class="heading">Grad Track</div>
+                              </div>
+                           
+                           <div class="card-slide">
+                              
+                              <div class="card-slide-wrapper">
+                                 
+                                 <div class="heading">Grad Track</div>
+                                 
+                                 <div>
+                                    
+                                    <hr class="hr-yellow">
+                                    <!-- 			<a href="/programs/grad-track/index.html" class="text-white-override"> -->
+                                    Learn more
+                                    <!-- 			</a> -->
+                                    </div>
+                                 </div>
+                              </div>
+                           <!-- </div> -->
+                           </a>
+                        </div>
+                     <div class="flipper">
+                        <img src="./assets/media/images/MastersDegree.jpg" alt="Student presenting their poster at conference.">
+                        <a href="/programs/msds/index.html" class="flipper-card">
+                           <!-- 	<div class="flipper-card"> -->
+                           
+                           <div class="card-front">
+                              
+                              <div class="heading">Master's Degree Program</div>
+                              </div>
+                           
+                           <div class="card-slide">
+                              
+                              <div class="card-slide-wrapper">
+                                 
+                                 <div class="heading">Master's Degree Program</div>
+                                 
+                                 <div>
+                                    
+                                    <hr class="hr-yellow">
+                                    <!-- 			<a href="/programs/msds/index.html" class="text-white-override"> -->
+                                    Learn more
+                                    <!-- 			</a> -->
+                                    </div>
+                                 </div>
+                              </div>
+                           <!-- </div> -->
+                           </a>
+                        </div>
+                     <div class="flipper">
+                        <img src="./assets/media/images/GraduateAcademic.jpg" alt="Group of DVXR students outside lab.">
+                        <a href="/programs/gacs/index.html" class="flipper-card">
+                           <!-- 	<div class="flipper-card"> -->
+                           
+                           <div class="card-front">
+                              
+                              <div class="heading">Graduate Academic Certificate</div>
+                              </div>
+                           
+                           <div class="card-slide">
+                              
+                              <div class="card-slide-wrapper">
+                                 
+                                 <div class="heading">Graduate Academic Certificate</div>
+                                 
+                                 <div>
+                                    
+                                    <hr class="hr-yellow">
+                                    <!-- 			<a href="/programs/gacs/index.html" class="text-white-override"> -->
+                                    Learn more
+                                    <!-- 			</a> -->
+                                    </div>
+                                 </div>
+                              </div>
+                           <!-- </div> -->
+                           </a>
+                        </div>
+                     	</div>
+                  </div> 
+               <div class="section-header centered pb-0">
+                  <div class="section-header-wrapper">
+                     <div class="section-header-heading">
+                        <h2>Academic Programs</h2>
+                     </div>
+                     <div class="section-header-content"></div>
+                  </div>
+               </div>
+               <div class="standard-wizzy">
+                  <div class="wizzy-wrapper">
+                     <h3 tabindex="-1"><a tabindex="-1" href="/programs/bsds/index.html">Bachelor of Science in Data Science</a></h3>
+                     <p tabindex="-1">The Bachelor of Science in Data Science at the University of North Texas is designed
+                        to meet the rising demand for professionals in data management, big data, and data
+                        analytics fields.&nbsp;</p>
+                     <h3 tabindex="-1"><a href="/programs/grad-track/index.html">Grad Track</a></h3>
+                     <p tabindex="-1">The Grad Track is a program option for students enrolled in the B.S. in Data Science
+                        (BSDS) program planning ahead for a graduate program and who wish to pursue the Master
+                        of Science in Data Science (MSDS) program. A student admitted to the Grad Track program
+                        may enroll in six semester credit hours (2 courses) of graduate-level Data Science
+                        courses while completing the B.S. in Data Science degree. The credits earned will
+                        count first toward the BSDS and then the MSDS degree program.</p>
+                     <h3 tabindex="-1"><a href="/programs/msds/index.html">Master of Science in Data Science</a></h3>
+                     <p tabindex="-1">Designed to meet the rising demand for highly skilled data science and data analytics
+                        professionals. It prepares students for careers in data science and analytics with
+                        a broad knowledge of the required tools, techniques, and methods.</p>
+                     <h3 tabindex="-1"><a href="/programs/gacs/index.html">Graduate Academic Certificate</a></h3>
+                     <p><span>The Graduate Academic Certificate program is intended for who already have a bachelor's
+                           or master's degree, and want to develop or enhance their knowledge and skills in a
+                           particular area by taking graduate-level courses to receive an academic credential.
+                           The certificates can also be completed while students are pursuing a master's degree.</span></p>
+                  </div>
+               </div>
+               <p tabindex="-1">&nbsp;</p>
+            </div>
+         </div>
+      </div>
+
+
+<footer class="coe-footer" role="contentinfo" style="padding-top: 10px; padding-bottom: 10px;">
+    <div class="container container--50-20 is-adjacent" style="display: flex; justify-content: center;">
+        <div class="container__col">
+            <div class="coe-footer__list-container">
+                <ul class="coe-footer__list" style="display: flex !important; gap: 10px !important; list-style: none !important; padding: 0 !important; margin: 0 !important; justify-content: center;">
+                    <li style="display: inline !important;"><a href="index.html" style="text-decoration: none !important; color: #fff !important; font-size: 14px;">Home</a></li>
+                    <li style="display: inline !important;"><a href="about.html" style="text-decoration: none !important; color: #fff !important; font-size: 14px;">About</a></li>
+                    <li style="display: inline !important;"><a href="publication.html" style="text-decoration: none !important; color: #fff !important; font-size: 14px;">Publication</a></li>
+                    <li style="display: inline !important;"><a href="researchlab.html" style="text-decoration: none !important; color: #fff !important; font-size: 14px;">Research</a></li>
+                    <li style="display: inline !important;"><a href="course.html" style="text-decoration: none !important; color: #fff !important; font-size: 14px;">Course</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    /* Default for larger screens (Desktop) */
+    .coe-footer__list {
+        display: flex !important;
+        gap: 15px !important;
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .coe-footer__list li {
+        display: inline !important;
+    }
+    .coe-footer__list a {
+        text-decoration: none !important;
+        color: #fff !important;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .coe-footer__list {
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+        .coe-footer__list li {
+            display: block !important;
+            margin-bottom: 10px !important; /* Add some spacing between items */
+        }
+    }
+</style>
+
+
+<footer class="global-footer" style="background-color: #171615;">
+    <div class="global-footer__row" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div class="global-footer__nav">
+            <div class="footer-marketing-main" style="display: flex; justify-content: center; gap: 20px;">
+                <div class="block left">
+                    <a href="index.html"><img alt="co-op 100 logo" src="./assets/media/images/logo2.jpeg"></a>
+                </div>
+                <div class="block right">
+                    <a href="index.html"><img alt="Drexel University" src="./assets/media/images/logo2.jpeg"></a>
+                </div>
+            </div>          
+        </div>
+        
+                            
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="./assets/sc_scripts/V3/libraries-generated.js"></script>
+<script type="text/javascript" src="./assets/sc_scripts/V3/index-generated.js"></script>
+
+
+	</form>
+</body>
+
+</html>
+
